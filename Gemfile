@@ -6,7 +6,30 @@ gem 'rails', '3.2.19'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
+gem 'devise'
 
+group :test, :development do
+  gem 'brakeman', require: false
+  gem 'pry'
+  gem 'pry-byebug'
+  gem 'pry-stack_explorer'
+  gem 'pry-rails'
+  gem 'binding_of_caller'
+  gem 'better_errors'
+  gem 'rspec-rails'
+end
+
+group :test do
+  gem 'minitest'
+  gem 'spring'
+  gem 'database_cleaner'
+  gem 'shoulda'
+  gem 'shoulda-matchers', '~> 2.5.0', require: false
+  gem 'capybara'
+  gem 'mocha'
+  gem 'factory_girl_rails'
+  gem 'faker'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
