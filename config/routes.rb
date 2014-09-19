@@ -1,4 +1,5 @@
 FeedMe::Application.routes.draw do
+  root to: 'subscriptions#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
